@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pbcalculator.Controller">
+   <children>
+      <AnchorPane layoutX="220.0" prefHeight="720.0" prefWidth="1060.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="220.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane fx:id="pane_calculator" prefHeight="720.0" prefWidth="1060.0" />
+            <Pane fx:id="pane_scientific" prefHeight="720.0" prefWidth="1060.0" />
+            <Pane fx:id="pane_programmer" prefHeight="720.0" prefWidth="1060.0" />
+            <Pane fx:id="pane_date" prefHeight="720.0" prefWidth="1060.0" />
+            <Pane fx:id="pane_currency" prefHeight="720.0" prefWidth="1060.0" />
+            <Pane fx:id="pane_volume" prefHeight="720.0" prefWidth="1060.0" />
+            <Pane fx:id="pane_length" prefHeight="720.0" prefWidth="1060.0" />
+            <Pane fx:id="pane_weight_mass" prefHeight="720.0" prefWidth="1060.0" />
+            <Pane fx:id="pane_temperature" prefHeight="720.0" prefWidth="1060.0" />
+            <Pane fx:id="pane_energy" prefHeight="720.0" prefWidth="1060.0" />
+            <Pane fx:id="pane_area" prefHeight="720.0" prefWidth="1060.0" />
+            <Pane fx:id="pane_speed" prefHeight="720.0" prefWidth="1060.0" />
+            <Pane fx:id="pane_time" prefHeight="720.0" prefWidth="1060.0" />
+            <Pane fx:id="pane_power" prefHeight="720.0" prefWidth="1060.0" />
+         </children></AnchorPane>
+      <AnchorPane prefHeight="720.0" prefWidth="220.0" style="-fx-background-color: #FFF;">
+         <children>
+            <AnchorPane prefHeight="720.0" prefWidth="41.0" style="-fx-background-color: #F8F8F8;">
+               <effect>
+                  <DropShadow height="18.04" radius="4.01" width="0.0" />
+               </effect></AnchorPane>
+            <Label layoutX="54.0" layoutY="10.0" prefHeight="25.0" prefWidth="163.0" text="Calculator">
+               <font>
+                  <Font name="Roboto Bold" size="18.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btn_standard" blendMode="MULTIPLY" layoutY="41.0" onAction="#handleButtonAction" prefHeight="35.0" prefWidth="221.0" style="-fx-background-color: #F8F8F8;" text="Standard">
+               <font>
+                  <Font name="Roboto Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btn_scientific" blendMode="MULTIPLY" layoutY="79.0" onAction="#handleButtonAction" prefHeight="35.0" prefWidth="221.0" style="-fx-background-color: #F8F8F8;" text="Scientific">
+               <font>
+                  <Font name="Roboto Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btn_programmer" blendMode="MULTIPLY" layoutY="117.0" onAction="#handleButtonAction" prefHeight="35.0" prefWidth="221.0" style="-fx-background-color: #F8F8F8;" text="Programmer">
+               <font>
+                  <Font name="Roboto Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btn_date" blendMode="MULTIPLY" layoutY="155.0" onAction="#handleButtonAction" prefHeight="35.0" prefWidth="221.0" style="-fx-background-color: #F8F8F8;" text="Date Calculation">
+               <font>
+                  <Font name="Roboto Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="54.0" layoutY="198.0" prefHeight="25.0" prefWidth="163.0" text="Converter">
+               <font>
+                  <Font name="Roboto Bold" size="18.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btn_currency" blendMode="MULTIPLY" layoutY="230.0" onAction="#handleButtonAction" prefHeight="35.0" prefWidth="221.0" style="-fx-background-color: #F8F8F8;" text="Currency">
+               <font>
+                  <Font name="Roboto Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btn_volume" blendMode="MULTIPLY" layoutY="268.0" onAction="#handleButtonAction" prefHeight="35.0" prefWidth="221.0" style="-fx-background-color: #F8F8F8;" text="Volume">
+               <font>
+                  <Font name="Roboto Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btn_length" blendMode="MULTIPLY" layoutY="306.0" onAction="#handleButtonAction" prefHeight="35.0" prefWidth="221.0" style="-fx-background-color: #F8F8F8;" text="Length">
+               <font>
+                  <Font name="Roboto Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btn_weight_mass" blendMode="MULTIPLY" layoutY="344.0" onAction="#handleButtonAction" prefHeight="35.0" prefWidth="221.0" style="-fx-background-color: #F8F8F8;" text="Weight and Mass">
+               <font>
+                  <Font name="Roboto Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btn_temperature" blendMode="MULTIPLY" layoutY="382.0" onAction="#handleButtonAction" prefHeight="35.0" prefWidth="221.0" style="-fx-background-color: #F8F8F8;" text="Temperature">
+               <font>
+                  <Font name="Roboto Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btn_energy" blendMode="MULTIPLY" layoutY="420.0" onAction="#handleButtonAction" prefHeight="35.0" prefWidth="221.0" style="-fx-background-color: #F8F8F8;" text="Energy">
+               <font>
+                  <Font name="Roboto Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btn_area" blendMode="MULTIPLY" layoutY="458.0" onAction="#handleButtonAction" prefHeight="35.0" prefWidth="221.0" style="-fx-background-color: #F8F8F8;" text="Area">
+               <font>
+                  <Font name="Roboto Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btn_speed" blendMode="MULTIPLY" layoutY="496.0" onAction="#handleButtonAction" prefHeight="35.0" prefWidth="221.0" style="-fx-background-color: #F8F8F8;" text="Speed">
+               <font>
+                  <Font name="Roboto Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btn_time" blendMode="MULTIPLY" layoutY="534.0" onAction="#handleButtonAction" prefHeight="35.0" prefWidth="221.0" style="-fx-background-color: #F8F8F8;" text="Time">
+               <font>
+                  <Font name="Roboto Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btn_power" blendMode="MULTIPLY" layoutY="572.0" onAction="#handleButtonAction" prefHeight="35.0" prefWidth="221.0" style="-fx-background-color: #F8F8F8;" text="Power">
+               <font>
+                  <Font name="Roboto Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="54.0" layoutY="666.0" prefHeight="25.0" prefWidth="163.0" text="Vamsi Charan Adari">
+               <font>
+                  <Font name="Calibri Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="54.0" layoutY="691.0" prefHeight="25.0" prefWidth="163.0" text="Passionate Burger Crafts ✎">
+               <font>
+                  <Font name="Calibri Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <DropShadow radius="6.2925" width="6.17" />
+         </effect>
+      </AnchorPane>
+   </children>
+</AnchorPane>

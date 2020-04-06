@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="181.0" prefWidth="262.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fractions.FXMLDocumentController">
+    <children>
+      <Button fx:id="btnCompute" layoutX="67.0" layoutY="132.0" onAction="#handleButtonComputeAction" text="Compute" />
+      <Label fx:id="opsLabel" layoutX="87.0" layoutY="52.0" minHeight="11.0" minWidth="7.0" prefHeight="16.0" prefWidth="11.0" />
+      <TextField fx:id="txtNum1" alignment="CENTER_RIGHT" layoutX="39.0" layoutY="32.0" prefHeight="25.0" prefWidth="45.0" promptText="num1" />
+      <TextField fx:id="txtDen1" alignment="CENTER_RIGHT" layoutX="39.0" layoutY="64.0" prefHeight="25.0" prefWidth="45.0" promptText="den1" />
+      <TextField fx:id="txtNum2" alignment="CENTER_RIGHT" layoutX="99.0" layoutY="32.0" prefHeight="25.0" prefWidth="45.0" promptText="num2" />
+      <TextField fx:id="txtDen2" alignment="CENTER_RIGHT" layoutX="99.0" layoutY="64.0" prefHeight="25.0" prefWidth="45.0" promptText="den2" />
+      <Label fx:id="label1" layoutX="150.0" layoutY="52.0" minHeight="11.0" minWidth="7.0" prefHeight="16.0" prefWidth="11.0" text="=" />
+      <TextField fx:id="txtNum3" alignment="CENTER_RIGHT" editable="false" layoutX="161.0" layoutY="32.0" prefHeight="25.0" prefWidth="65.0" />
+      <TextField fx:id="txtDen3" alignment="CENTER_RIGHT" editable="false" layoutX="161.0" layoutY="64.0" prefHeight="25.0" prefWidth="65.0" />
+      <Button fx:id="btnQuit" layoutX="150.0" layoutY="132.0" onAction="#handleButtonQuitAction" text="Quit" />
+      <RadioButton fx:id="addOp" layoutX="26.0" layoutY="102.0" mnemonicParsing="false" onAction="#radioButtonChanged" text="Add" />
+      <RadioButton fx:id="subOp" layoutX="81.0" layoutY="102.0" mnemonicParsing="false" onAction="#radioButtonChanged" text="Sub" />
+      <RadioButton fx:id="mulOp" layoutX="134.0" layoutY="102.0" mnemonicParsing="false" onAction="#radioButtonChanged" text="Mul" />
+      <RadioButton fx:id="divOp" layoutX="188.0" layoutY="102.0" mnemonicParsing="false" onAction="#radioButtonChanged" text="Div" />
+    </children>
+</AnchorPane>

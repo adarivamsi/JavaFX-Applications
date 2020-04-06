@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="263.0" prefWidth="615.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bignumbercalculator.FXMLDocumentController">
+    <children>
+      <Label layoutX="33.0" layoutY="23.0" minHeight="16" minWidth="69" prefHeight="38.0" prefWidth="69.0" text="Number 1:" />
+      <Label layoutX="33.0" layoutY="70.0" minHeight="16" minWidth="69" prefHeight="38.0" prefWidth="69.0" text="Number 2:" />
+      <Label layoutX="33.0" layoutY="116.0" minHeight="16" minWidth="69" prefHeight="38.0" prefWidth="69.0" text="Result:" />
+      <TextField fx:id="num1" alignment="CENTER_RIGHT" layoutX="110.0" layoutY="29.0" onKeyTyped="#handleTextExceedLengthAction" prefHeight="27.0" prefWidth="387.0" />
+      <TextField fx:id="num2" alignment="CENTER_RIGHT" layoutX="110.0" layoutY="76.0" onKeyTyped="#handleTextExceedLengthAction" prefHeight="27.0" prefWidth="387.0" />
+      <TextField fx:id="result" alignment="CENTER_RIGHT" editable="false" layoutX="110.0" layoutY="122.0" prefHeight="27.0" prefWidth="387.0" />
+      <Button fx:id="add" layoutX="39.0" layoutY="169.0" mnemonicParsing="false" onAction="#handleButtonAddAction" prefHeight="27.0" prefWidth="52.0" text="+" />
+      <Button fx:id="sub" layoutX="108.0" layoutY="169.0" mnemonicParsing="false" onAction="#handleButtonSubAction" prefHeight="27.0" prefWidth="52.0" text="-" />
+      <Button fx:id="mul" layoutX="175.0" layoutY="169.0" mnemonicParsing="false" onAction="#handleButtonMulAction" prefHeight="27.0" prefWidth="52.0" text="x" />
+      <Button fx:id="div" layoutX="240.0" layoutY="169.0" mnemonicParsing="false" onAction="#handleButtonDivAction" prefHeight="27.0" prefWidth="52.0" text="/" />
+      <Button fx:id="clear" layoutX="124.0" layoutY="220.0" mnemonicParsing="false" onAction="#handleButtonClearAction" text="Clear" />
+      <Button fx:id="smaller" layoutX="374.0" layoutY="169.0" mnemonicParsing="false" onAction="#handleButtonSmallerAction" prefHeight="27.0" prefWidth="52.0" text="&lt;" />
+      <Button fx:id="bigger" layoutX="305.0" layoutY="169.0" mnemonicParsing="false" onAction="#handleButtonBiggerAction" prefHeight="27.0" prefWidth="52.0" text="&gt;" />
+      <Button fx:id="equal" layoutX="443.0" layoutY="169.0" mnemonicParsing="false" onAction="#handleButtonEqualAction" prefHeight="27.0" prefWidth="44.0" text="= =" />
+      <Button fx:id="close" layoutX="352.0" layoutY="220.0" mnemonicParsing="false" onAction="#handleButtonCloseAction" text="Close" />
+      <Button fx:id="compute" layoutX="227.0" layoutY="221.0" mnemonicParsing="false" onAction="#handleButtonComputeAction" text="Compute" />
+      <Label fx:id="operator" layoutX="509.0" layoutY="22.0" prefHeight="85.0" prefWidth="101.0" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="60.0" />
+         </font></Label>
+    </children>
+</AnchorPane>
